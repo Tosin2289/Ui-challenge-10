@@ -40,210 +40,205 @@ class HomePage extends StatelessWidget {
               child: Container(
                 color: Colors.white,
                 height: 320,
-                child: SingleChildScrollView(
-                  child: Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            "Recommended Class",
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            "View All",
+                            style: TextStyle(fontSize: 16, color: Colors.blue),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
                         child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
-                              "Recommended Class",
-                              style: TextStyle(
-                                  fontSize: 18, fontWeight: FontWeight.bold),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Container(
+                                height: 220,
+                                width: 190,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(15),
+                                    image: DecorationImage(
+                                      fit: BoxFit.cover,
+                                      image: AssetImage('assets/girla.jpg'),
+                                    )),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Column(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      SizedBox(
+                                        height: 30,
+                                      ),
+                                      Container(
+                                        height: 100,
+                                        decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(10),
+                                        ),
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Column(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Text(
+                                                "Mastering UI Design to Flutter.jobs App",
+                                                style: TextStyle(
+                                                    fontWeight:
+                                                        FontWeight.bold),
+                                              ),
+                                              Row(
+                                                children: [
+                                                  Icon(
+                                                    Icons.star,
+                                                    size: 13,
+                                                    color: Colors.yellow[600],
+                                                  ),
+                                                  Icon(
+                                                    Icons.star,
+                                                    size: 13,
+                                                    color: Colors.yellow[600],
+                                                  ),
+                                                  Icon(
+                                                    Icons.star,
+                                                    size: 13,
+                                                    color: Colors.yellow[600],
+                                                  ),
+                                                  Icon(
+                                                    Icons.star,
+                                                    size: 13,
+                                                    color: Colors.yellow[600],
+                                                  ),
+                                                  Icon(
+                                                    Icons.star,
+                                                    size: 13,
+                                                    color: Colors.yellow[600],
+                                                  ),
+                                                  SizedBox(
+                                                    width: 5,
+                                                  ),
+                                                  Text(
+                                                    "187 Member",
+                                                  )
+                                                ],
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
                             ),
-                            Text(
-                              "View All",
-                              style:
-                                  TextStyle(fontSize: 16, color: Colors.blue),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Container(
+                                height: 220,
+                                width: 190,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(15),
+                                    image: DecorationImage(
+                                      fit: BoxFit.cover,
+                                      image: AssetImage('assets/girlb.jpg'),
+                                    )),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Column(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      SizedBox(
+                                        height: 30,
+                                      ),
+                                      Container(
+                                        height: 100,
+                                        decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(10),
+                                        ),
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Column(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Text(
+                                                "Mastering Blender 3D Character Set Design",
+                                                style: TextStyle(
+                                                    fontWeight:
+                                                        FontWeight.bold),
+                                              ),
+                                              Row(
+                                                children: [
+                                                  Icon(
+                                                    Icons.star,
+                                                    size: 13,
+                                                    color: Colors.yellow[600],
+                                                  ),
+                                                  Icon(
+                                                    Icons.star,
+                                                    size: 13,
+                                                    color: Colors.yellow[600],
+                                                  ),
+                                                  Icon(
+                                                    Icons.star,
+                                                    size: 13,
+                                                    color: Colors.yellow[600],
+                                                  ),
+                                                  Icon(
+                                                    Icons.star,
+                                                    size: 13,
+                                                    color: Colors.yellow[600],
+                                                  ),
+                                                  Icon(
+                                                    Icons.star,
+                                                    size: 13,
+                                                    color: Colors.yellow[600],
+                                                  ),
+                                                  SizedBox(
+                                                    width: 5,
+                                                  ),
+                                                  Text(
+                                                    "211 Member",
+                                                  )
+                                                ],
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
                             ),
                           ],
                         ),
                       ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(12.0),
-                        child: SingleChildScrollView(
-                          scrollDirection: Axis.horizontal,
-                          child: Row(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Container(
-                                  height: 220,
-                                  width: 190,
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(15),
-                                      image: DecorationImage(
-                                        fit: BoxFit.cover,
-                                        image: AssetImage('assets/girla.jpg'),
-                                      )),
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        SizedBox(
-                                          height: 30,
-                                        ),
-                                        Container(
-                                          height: 100,
-                                          decoration: BoxDecoration(
-                                            color: Colors.white,
-                                            borderRadius:
-                                                BorderRadius.circular(10),
-                                          ),
-                                          child: Padding(
-                                            padding: const EdgeInsets.all(8.0),
-                                            child: Column(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment
-                                                      .spaceBetween,
-                                              children: [
-                                                Text(
-                                                  "Mastering UI Design to Flutter.jobs App",
-                                                  style: TextStyle(
-                                                      fontWeight:
-                                                          FontWeight.bold),
-                                                ),
-                                                Row(
-                                                  children: [
-                                                    Icon(
-                                                      Icons.star,
-                                                      size: 13,
-                                                      color: Colors.yellow[600],
-                                                    ),
-                                                    Icon(
-                                                      Icons.star,
-                                                      size: 13,
-                                                      color: Colors.yellow[600],
-                                                    ),
-                                                    Icon(
-                                                      Icons.star,
-                                                      size: 13,
-                                                      color: Colors.yellow[600],
-                                                    ),
-                                                    Icon(
-                                                      Icons.star,
-                                                      size: 13,
-                                                      color: Colors.yellow[600],
-                                                    ),
-                                                    Icon(
-                                                      Icons.star,
-                                                      size: 13,
-                                                      color: Colors.yellow[600],
-                                                    ),
-                                                    SizedBox(
-                                                      width: 5,
-                                                    ),
-                                                    Text(
-                                                      "187 Member",
-                                                    )
-                                                  ],
-                                                )
-                                              ],
-                                            ),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Container(
-                                  height: 220,
-                                  width: 190,
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(15),
-                                      image: DecorationImage(
-                                        fit: BoxFit.cover,
-                                        image: AssetImage('assets/girlb.jpg'),
-                                      )),
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        SizedBox(
-                                          height: 30,
-                                        ),
-                                        Container(
-                                          height: 100,
-                                          decoration: BoxDecoration(
-                                            color: Colors.white,
-                                            borderRadius:
-                                                BorderRadius.circular(10),
-                                          ),
-                                          child: Padding(
-                                            padding: const EdgeInsets.all(8.0),
-                                            child: Column(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment
-                                                      .spaceBetween,
-                                              children: [
-                                                Text(
-                                                  "Mastering Blender 3D Character Set Design",
-                                                  style: TextStyle(
-                                                      fontWeight:
-                                                          FontWeight.bold),
-                                                ),
-                                                Row(
-                                                  children: [
-                                                    Icon(
-                                                      Icons.star,
-                                                      size: 13,
-                                                      color: Colors.yellow[600],
-                                                    ),
-                                                    Icon(
-                                                      Icons.star,
-                                                      size: 13,
-                                                      color: Colors.yellow[600],
-                                                    ),
-                                                    Icon(
-                                                      Icons.star,
-                                                      size: 13,
-                                                      color: Colors.yellow[600],
-                                                    ),
-                                                    Icon(
-                                                      Icons.star,
-                                                      size: 13,
-                                                      color: Colors.yellow[600],
-                                                    ),
-                                                    Icon(
-                                                      Icons.star,
-                                                      size: 13,
-                                                      color: Colors.yellow[600],
-                                                    ),
-                                                    SizedBox(
-                                                      width: 5,
-                                                    ),
-                                                    Text(
-                                                      "211 Member",
-                                                    )
-                                                  ],
-                                                )
-                                              ],
-                                            ),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),
